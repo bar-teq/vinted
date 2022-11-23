@@ -1,6 +1,4 @@
-# from encodings.utf_8_sig import decode
-# from fileinput import filename
-# from hashlib import new
+
 import imaplib
 import os
 import email
@@ -122,8 +120,6 @@ for f in os.listdir(labels_dir):
     filePath2 = os.path.join(attachment_dir, f)
     os.startfile(filePath, "print")
     time.sleep(4)
-    # os.remove(os.path.join(attachment_dir, f))
-    # os.remove(os.path.join(labels_dir, f))
     printed += 1
 
 print()
